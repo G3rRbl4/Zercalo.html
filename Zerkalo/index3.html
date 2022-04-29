@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta data-safe="content-type" content="text/html; charset=utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News салона </title>
+     <script src="./modal.js"></script> 
+    <style>
+    .btn {
+      background-color: DodgerBlue;
+      border: none;
+      color: white;
+      margin: 0 auto;
+      padding: 12px 16px;
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .tBtn{
+    color: #E6E6FA;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .btn:hover {
+      background-color: RoyalBlue;}
+ h1{
+        font-size:4rem ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        color: #222
+      }
+      h2{
+        font-size:3rem ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        color: #222;
+      }
+.jpg{
+    margin: 0 auto;
+    padding: 0;
+    width: 400px;
+    height: 268px;
+    box-shadow: 0px 20px 50px #222;
+    cursor: pointer;
+}
+@media screen and (max-height:720px) {
+                h1,h2 {
+                  font-size: 250%;
+                  }
+                }
+                @media screen and (max-height:720px) {
+                  .t-container, .jpg {
+                   display: flex;
+                   margin: 0 auto;
+                   padding: 0;
+                   box-shadow: 10px 10px 0px rgb(216, 182, 118);
+                  }
+                }
+                @media screen and (max-height:720px) {
+                  .mydbord {
+                    margin: 0 auto;
+                    
+                  }
+                }
+       
+.dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.dm-overlay:target {
+    display: block;
+
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+
+.dm-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.dm-cell {
+    transition: 0.5s;
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.dm-modal {
+    display: inline-block;
+    padding: 20px;
+    transition: 0.5s;
+    max-width: 50rem;
+
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #cfd8dc;
+    text-align: left;
+
+    -webkit-animation: fade .8s;
+    -moz-animation: fade .8s;
+    animation: fade .8s;
+}
+  </style>
+</head>
+<body>
+  <div>
+    <button class="btn" ><i class="fa fa-home"><a class="tBtn" href="index.html">← На главную</a></i></button>
+    <h1>Новости.ZerkaloORG</h1>
+    <h2>МУДБОРД</h2>
+    <div class="mydbord">
+        <div class="t-container">
+            <a href="#win1"><img class="jpg" alt="tr" src="1s.jpg"></a>
+            <a href="#win1"><img class="jpg" alt="tr" src="2s.jpg"></a>
+            <a href="#win1"><img class="jpg" alt="tr" src="3s.jpg"></a>
+        </div>
+        <div class="t-container">
+            <a href="#win1"><img class="jpg" alt="tr" src="4s.jpg"></a>
+            <a href="#win1"><img class="jpg" alt="tr" src="5s.jpg"></a>
+            <a href="#win1"><img class="jpg" alt="tr" src="6s.jpg"></a>
+        </div>
+        <div class="dm-overlay" id="win1">
+          <div class="dm-table">
+              <div class="dm-cell">
+                  <div class="dm-modal">
+                      <a href="#close" class="close"></a>
+                      <div class="pl-left">
+                        <img class="jpg" alt="tr" src="1s.jpg">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

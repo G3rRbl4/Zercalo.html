@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta data-safe="content-type" content="text/html; charset=utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online запись</title>
+    <style>
+     .btn {
+      background-color: DodgerBlue;
+      border: none;
+      color: white;
+      margin: 0 auto;
+      padding: 12px 16px;
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .tBtn{
+    color: #E6E6FA;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .btn:hover {
+      background-color: RoyalBlue;
+  }
+       h1{
+         margin: 0px;
+        color: #222;
+        font-size:4rem ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+      }
+      h2{
+        color: #222;
+        font-size: 23pt;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+      }
+      h3{
+        margin: 0px;
+        padding: 0px;
+        color: RoyalBlue;
+        font-size:4rem ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+      }
+      .selectr{
+        color: #E6E6FA;
+        background-color: #222;
+        height: 50px;
+        width: 400px;
+        margin: 0 auto;
+        display: block; 
+      }
+      .select{
+        margin-top: 80px;
+      }
+      @media screen and (max-height:720px) {
+                h1, h3 {
+                  font-size: 300%;
+                  }
+                }
+                @media screen and (max-height:720px) {
+                h2 {
+                  font-size: 150%;
+                  }
+                }
+    </style>
+</head>
+<body>
+  <button class="btn" ><i class="fa fa-home"><a class="tBtn" href="index.html">Профиль</a></i></button>
+  <div><h3>Online</h3><h1> запись ZERKALO</h1></div>
+  <div class="select">
+  <h2>Выберите специалиста:</h2>
+  <select name="hall" class="selectr" >
+    <option>Gonzalez D.K.</option>
+    <option>Johnson S.W.</option>
+    <option>Brown R.J.</option>
+  </select>
+  <h2>Выберите дату:</h2>
+   <input  class="selectr" type='date' />
+  <h2>Выберите услугу:</h2>
+  <select name="hall" class="selectr" >
+    <option>Стрижки и окрашивание</option>
+    <option>Окрашивание волос</option>
+    <option>Маникюр и педикюр</option>
+    <option>Брови и ресницы</option>
+    <option>Макияж</option>
+  </select>
+  </div>
+  <script src="./main.js"></script> 
+</body>
+</html>
